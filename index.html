@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christopher BLAUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li>
-                    <a href="">ACCUEIL</a>
+                    <a href="#">ACCUEIL</a>
                 </li>
                 <li>
-                    <a href="">COMPETENCES</a>
+                    <a href="#skills">COMPETENCES</a>
                 </li>
                 <li>
-                    <a href="">PORTFOLIO</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="">EXPERIENCE</a>
+                    <a href="#xp">EXPERIENCE</a>
                 </li>
                 <li>
                     <a href="">A PROPOS DE MOI</a>
@@ -32,70 +35,84 @@
     </header>
     <main>
         <section class="info">
-            <h1>Christopher BLAUD</h1>
-            <h2>Je suis <span>Développeur Web.</span></h2>
-            <button>Télécharger mon CV</button>
+            <h1>Christopher <span>BLAUD</span></h1>
+            <h2>Je suis <span class="auto-type"></span></h2>
+            <button><a href="./assets/CV_christopher_blaud.pdf">Télécharger mon CV</a></button>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h3>MES COMPETENCES TECHNIQUES</h3>
             <ul>
-                <li>
-                    <span>HTML & CSS</span>
-                    <div class="progress-bar"></div>
+                <li>                    
+                    <span>HTML</span>
+                    <div class="html-progress ldBar" data-value="80" data-transition-in="true"></div>
                 </li>
-                <li>
+                <li>                    
+                    <span>CSS</span>
+                    <div class="css-progress ldBar" data-value="70" data-transition-in="true"></div>
+                </li>
+                <li>                    
                     <span>JS</span>
-                    <div class="progress-bar"></div>
+                    <div class="js-progress ldBar" data-value="50" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>Vue JS</span>
-                    <div class="progress-bar"></div>
+                    <div class="vue-progress ldBar" data-value="60" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>Bootstrap</span>
-                    <div class="progress-bar"></div>
+                    <div class="boot-progress ldBar" data-value="30" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>GIT & GITHUB</span>
-                    <div class="progress-bar"></div>
+                    <div class="git-progress ldBar" data-value="75" data-transition-in="true"></div>
+                </li>
+                <li>
+                    <span>Express JS</span>
+                    <div class="boot-progress ldBar" data-value="50" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>MongoDB</span>
-                    <div class="progress-bar"></div>
+                    <div class="mongo-progress ldBar" data-value="45" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>MySQL</span>
-                    <div class="progress-bar"></div>
+                    <div class="mysql-progress ldBar" data-value="50" data-transition-in="true"></div>
                 </li>
             </ul>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h3>PORTFOLIO</h3>
             <h4>Mes derniers projets réalisés</h4>
             <div class="caroussel"></div>
         </section>
-        <section class="xp">
-            <span>2021 - 2022</span>
-            <h5>OpenClassrooms</h5>
-            <h6>Développeur Web</h6>
-            <ul>
-                <li>Intégration d'interfaces responsives</li>
-                <li>Mise en place d' effets CSS avancés</li>
-                <li>Utilisation d'un système de gestion pour le suivi du projet</li>
-                <li>Optimisation des performances et de l'accessibilité d'un site web</li>
-                <li>Optimisation du référencement SEO</li>
-                <li>Validation de données - Création de tests unitaires</li>
-                <li>Interaction avec une API</li>
-                <li>Stockage de données de façon sécurisée</li>
-                <li>Mise en œuvre d' opérations CRUD</li>
-                <li>Développement de l’interface d’un site web grâce à un framework front-end</li>
-                <li>Implémentation d'un stockage de données sécurisé en utilisant une base de données</li>
-            </ul>
+        <section class="xp" id="xp">
+            <h3>EXPÉRIENCE</h3>
+            <div class="xp_container">
+                <div class="xp-line" data-aos="slide-down" data-aos-duration = "900"></div>
+                <div class="xp-description">
+                    <span>2021 - 2022</span>
+                    <h5>OpenClassrooms</h5>
+                    <h6>Développeur Web</h6>
+                    <ul>
+                        <li>Intégration d'interfaces responsives</li>
+                        <li>Mise en place d' effets CSS avancés</li>
+                        <li>Utilisation d'un système de gestion pour le suivi du projet</li>
+                        <li>Optimisation des performances et de l'accessibilité d'un site web</li>
+                        <li>Optimisation du référencement SEO</li>
+                        <li>Validation de données - Création de tests unitaires</li>
+                        <li>Interaction avec une API</li>
+                        <li>Stockage de données de façon sécurisée</li>
+                        <li>Mise en œuvre d' opérations CRUD</li>
+                        <li>Développement de l’interface d’un site web grâce à un framework front-end</li>
+                        <li>Implémentation d'un stockage de données sécurisé en utilisant une base de données</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="about">
-            <div class="photo"></div>
-            <div>
-                <h3>A PROPOS DE MOI</h3>
+            <div class="about_photo"></div>
+            <div class="about_text">
+                <h3>À PROPOS DE MOI</h3>
                 <p>
                     J'ai toujours été attiré par le monde du web et des nouvelles technologies.
                     Par le biais d'une reconversion professionnelle et aussi de mon désir insatiable d'apprendre, je bifurque aujourd'hui vers une carrière de Développeur web.                    
@@ -133,5 +150,9 @@
     <footer>
         <span>C 2022 by Christopher BLAUD.</span>
     </footer>
+    <script src="./lib/typed.min.js"></script>
+    <script src="./lib/loading-bar.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
