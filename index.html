@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christopher BLAUD</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
+            <div class="navbar_icon" id="link-navbar">
+                <span></span>
+            </div>
             <ul>
                 <li>
                     <a href="#">ACCUEIL</a>
@@ -25,10 +29,10 @@
                     <a href="#xp">EXPERIENCE</a>
                 </li>
                 <li>
-                    <a href="">A PROPOS DE MOI</a>
+                    <a href="#about">A PROPOS DE MOI</a>
                 </li>
                 <li>
-                    <a href="">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -52,11 +56,11 @@
                 </li>
                 <li>                    
                     <span>JS</span>
-                    <div class="js-progress ldBar" data-value="50" data-transition-in="true"></div>
+                    <div class="js-progress ldBar" data-value="60" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>Vue JS</span>
-                    <div class="vue-progress ldBar" data-value="60" data-transition-in="true"></div>
+                    <div class="vue-progress ldBar" data-value="50" data-transition-in="true"></div>
                 </li>
                 <li>
                     <span>Bootstrap</span>
@@ -80,11 +84,77 @@
                 </li>
             </ul>
         </section>
-        <section class="portfolio" id="portfolio">
-            <h3>PORTFOLIO</h3>
-            <h4>Mes derniers projets réalisés</h4>
-            <div class="caroussel"></div>
-        </section>
+        <section class="splide" aria-labelledby="carousel-heading" id="portfolio">
+            <h3 id="carousel-heading">PORTFOLIO</h3>
+            <span class="splide__text">Mes derniers projets réalisés</span>          
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="https://christopher-blaud.github.io/P2_Booki/">
+                            <img src="./assets/Booki_edited.jpg" alt="Photo du site de booki">
+                        </a>
+                        <h4>Booki</h4>
+                        <p>
+                            <strong>Projet 2 du parcours Développeur Web Openclassrooms</strong><br>
+                            Ce site est le résultat de l'intégration d'une maquette pour Booki, une petite entreprise proposant un outil de planification de vacances.
+                            Le design est basé sur les principes du Material Design.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://christopher-blaud.github.io/BlaudChristopher_3_22112021/">
+                            <img src="./assets/omf.jpg" alt="Photo du site de ohmyfood">
+                        </a>
+                        <h4>Ohmyfood</h4>
+                        <p>
+                            <strong>Projet 3 du parcours Développeur Web Openclassrooms</strong><br>
+                            Ce site répertorie les menus des restaurants gastronomiques
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://christopher-blaud.github.io/P4_blaud_christopher/">
+                            <img src="./assets/chouette.png" alt="Photo du site de la chouette agence">
+                        </a>
+                        <h4>La chouette agence</h4>
+                        <p>
+                            <strong>Projet 4 du parcours Développeur Web Openclassrooms</strong><br>
+                            Ici le but étant d'optimiser un site web existant en améliorant sa vitesse de chargement,
+                            réduisant sa taille, le rendre accessible et en accord avec les standards WCAG ainsi que 
+                            d'optimiser son référencement.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://github.com/Christopher-BLAUD/P5_kanap">
+                            <img src="./assets/kanap.png" alt="Photo du site de kanap">
+                        </a>
+                        <h4>Kanap</h4>
+                        <p>
+                            <strong>Projet 5 du parcours Développeur Web Openclassrooms</strong><br>
+                            Il s'agit de la création d'un site web e-commerce.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://github.com/Christopher-BLAUD/P6_Piiquante">
+                            <img src="./assets/api.png" alt="Photo du l'application hot takes">
+                        </a>
+                        <h4>Piiquante</h4>
+                        <p>
+                            <strong>Projet 6 du parcours Développeur Web Openclassrooms</strong><br>
+                            Création d'une API sécurisée pour une application web de critique d'avis gastronomique.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://github.com/Christopher-BLAUD/P6_Piiquante">
+                            <img src="./assets/groupo.png" alt="Photo du logo Groupomania">
+                        </a>
+                        <h4>Groupomania</h4>
+                        <p>
+                            <strong>Projet 7 du parcours Développeur Web Openclassrooms</strong><br>
+                            Ceci est un réseau social d'entreprise dédié aux salariés de Groupomania
+                        </p>
+                    </li>
+                  </ul>
+            </div>
+          </section>
         <section class="xp" id="xp">
             <h3>EXPÉRIENCE</h3>
             <div class="xp_container">
@@ -109,7 +179,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about_photo"></div>
             <div class="about_text">
                 <h3>À PROPOS DE MOI</h3>
@@ -120,39 +190,50 @@
                 </p>
             </div>
         </section>
-        <section class="contact">
-            <div class="contact_info">
-                <h4>CONTACT</h4>
-                <p>
-                    Pour tout renseignement, n'hésitez pas à me contacter via les coordonnées ci-dessous ou en remplissant ce formulaire.
-                    Je vous répondrai dans les plus bref délais.
-                </p>
-                <div class="contact_link">
-                    <a href="">christopher.blaud.esi@gmail.com</a>
-                    <a href="">07 82 08 49 26</a>
+        <section class="contact" id="contact">
+            <div class="contact_container">
+                <div class="contact_info">
+                    <h4>CONTACT</h4>
+                    <p>
+                        Pour tout renseignement, n'hésitez pas à me contacter via les coordonnées ci-dessous ou en remplissant ce formulaire.
+                        Je vous répondrai dans les plus bref délais.
+                    </p>
+                    <div class="contact_link">
+                        <a href="mailto:christopher.blaud.esi@gmail.com">
+                            <div class="contact_link_icons"><i class="fa-solid fa-envelope"></i></div>                            
+                            <span>christopher.blaud.esi@gmail.com</span>
+                        </a>
+                        <a href="tel:+33782084926">
+                            <div class="contact_link_icons"><i class="fa-solid fa-mobile-screen-button"></i></div>                            
+                            <span>07 82 08 49 26</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <form action="">
+                        <input type="text" placeholder="Nom complet">
+                        <input type="email" name="email" placeholder="Adresse email">
+                        <input type="tel" placeholder="Numéro de téléphone">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
                 </div>
             </div>
-            <div class="contact_form">
-                <form action="">
-                    <input type="text">
-                    <input type="email" name="" id="">
-                    <input type="tel">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
             <div class="contact_social-links">
-                <a href="">GITHUB</a>
-                <a href="">Linkedin</a>
+                <a href="https://www.linkedin.com/in/christopher-blaud/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Christopher-BLAUD?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </section>
     </main>
     <footer>
-        <span>C 2022 by Christopher BLAUD.</span>
+        <span>© 2022 by Christopher BLAUD.</span>
     </footer>
+    <script src="./js/jquery.min.js"></script>
     <script src="./lib/typed.min.js"></script>
     <script src="./lib/loading-bar.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./main.js"></script>
+    <script src="./lib/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/0c464140a2.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
