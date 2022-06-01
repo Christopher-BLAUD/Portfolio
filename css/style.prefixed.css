@@ -641,13 +641,13 @@ h3{
 }
 @media screen and (max-width: 768px) {
     .about_photo{
-        height: 300px;
+        height: 440px;
         width: auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .about_photo{
-        height: 435px;
+        height: 640px;
     }
 }
 
@@ -734,6 +734,7 @@ h3{
     width: 1000px;
     margin: 60px 0;
     background-color: #FFEA80;
+    border-radius: 15px;
 }
 @media screen and (max-width: 768px) {
     .contact_container{

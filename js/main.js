@@ -1,7 +1,8 @@
 // Animation saisie de texte
 let typed = new Typed(".auto-type", {
     strings: ["Développeur web."],
-    typeSpeed: 40
+    typeSpeed: 40,
+    startDelay: 500
 })
 
 // Animation On Scroll
@@ -19,5 +20,6 @@ $('.navbar_icon').on('click',() => {
 })
 
 $('.navbar ul li').on('click', () => {
-    $('.navbar ul').removeClass('reveal')
+    $('.navbar ul').removeClass('reveal');
+    $('.navbar_icon').removeClass('active')
 })
