@@ -225,7 +225,7 @@ h3{
 }
 @media screen and (max-width: 768px) {
     .info{
-        padding-bottom: 200px;
+        padding: 200px 0;
     }
 }
 
