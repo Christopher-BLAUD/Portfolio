@@ -508,6 +508,7 @@ h3{
             align-items: center;
     background-color: #000000c7;
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .splide__text{
@@ -530,13 +531,18 @@ h3{
     width: auto;
     height: auto;
 }
+/* @media screen and (max-width: 768px){
+    .splide__track{
+        width: 290px;
+    }
+} */
 
 .splide__arrow--prev{
     left: 24em;
 }
 @media screen and (max-width: 768px) {
     .splide__arrow--prev{
-        left: 2em;
+        left: 1em;
     }
 }
 
@@ -545,7 +551,7 @@ h3{
 }
 @media screen and (max-width: 768px) {
     .splide__arrow--next{
-        right: 2em;
+        right: 1em;
     }
 }
 
@@ -604,6 +610,11 @@ h3{
     padding: 0 15px;
     font-weight: 200;
     word-wrap: break-word;
+}
+@media screen and (max-width: 768px){
+    .splide__slide p{
+        padding: 0 30px;
+    }
 }
 
 .splide__slide h4{
@@ -743,9 +754,7 @@ h3{
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 1000px;
     margin: 60px 0;
-    background-color: #FFEA80;
     border-radius: 15px;
 }
 @media screen and (max-width: 768px) {
@@ -774,20 +783,21 @@ h3{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
-    padding: 0 15px;
-    color: #1F1378;
+    width: calc(50% - 200px);
+    padding: 0 100px;
+    color: #e2bd06;
 }
 @media screen and (max-width: 768px) {
     .contact_info{
         width: auto;
+        padding: 0;
     }
 }
 
 .contact_info h4{
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-size: 25px;
+    font-size: 30px;
     margin: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -799,7 +809,7 @@ h3{
 
 .contact_info p{
     padding-left: 10px;
-    font-weight: 500;
+    font-weight: 400;
 }
 @media screen and (max-width: 768px) {
     .contact_info p{
@@ -847,6 +857,7 @@ h3{
     -webkit-transition: all 150ms ease-in-out;
     -o-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
+    color: #ffea82;
 }
 @media screen and (max-width: 768px) {
     .contact_link a{
@@ -959,6 +970,7 @@ h3{
 .contact_form textarea{
     resize: none;
     font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
 }
 
 .contact_form button{
