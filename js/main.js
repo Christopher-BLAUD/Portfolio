@@ -2,7 +2,7 @@
 let typed = new Typed(".auto-type", {
     strings: ["Développeur web."],
     typeSpeed: 40,
-    startDelay: 500
+    startDelay: 1000
 })
 
 // Animation On Scroll

@@ -8,7 +8,7 @@
     <meta name="title" content="Christopher BLAUD | Développeur Web">
     <title>Christopher BLAUD</title>
     <link rel="stylesheet" href="./css/splide.min.css">
-    <link rel="stylesheet" href="./css/style.prefixed.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -132,12 +132,20 @@
         <section class="xp" id="xp">
             <h3>EXPÉRIENCE</h3>
             <div class="xp_container">
-                <div class="xp-line" data-aos="slide-down" data-aos-duration = "900"></div>
+                <div class="xp-line" 
+                data-aos="slide-down" 
+                data-aos-duration = "900"
+                data-aos-once="true"
+                ></div>
                 <div class="xp-description">
                     <span>2021 - 2022</span>
                     <h5>OpenClassrooms</h5>
                     <h6>Développeur Web</h6>
-                    <ul>
+                    <ul 
+                    data-aos="fade-down" 
+                    data-aos-duration="900"
+                    data-aos-once="true"
+                    >
                         <li>Intégration d'interfaces responsives</li>
                         <li>Mise en place d' effets CSS avancés</li>
                         <li>Utilisation d'un système de gestion pour le suivi du projet</li>
@@ -156,41 +164,95 @@
         <section class="skills" id="skills">
             <h3>MES COMPETENCES TECHNIQUES</h3>
             <ul>
+                <li>
+                    <div class="html" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>HTML</span>
+                    </div>
+                </li>
                 <li>                    
-                    <span>HTML</span>
-                    <div class="html-progress ldBar" data-value="80" data-transition-in="true"></div>
+                    <div class="css" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>CSS</span>
+                    </div>
                 </li>
                 <li>                    
-                    <span>CSS</span>
-                    <div class="css-progress ldBar" data-value="70" data-transition-in="true"></div>
-                </li>
-                <li>                    
-                    <span>JS</span>
-                    <div class="js-progress ldBar" data-value="60" data-transition-in="true"></div>
-                </li>
-                <li>
-                    <span>Vue JS</span>
-                    <div class="vue-progress ldBar" data-value="50" data-transition-in="true"></div>
+                    <div class="js" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>Javascript</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Bootstrap</span>
-                    <div class="boot-progress ldBar" data-value="30" data-transition-in="true"></div>
+                    <div class="vue" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>Vue JS</span>
+                    </div>
                 </li>
                 <li>
-                    <span>GIT & GITHUB</span>
-                    <div class="git-progress ldBar" data-value="75" data-transition-in="true"></div>
+                    <div class="boot" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>Bootstrap</span>
+                    </div>
                 </li>
                 <li>
-                    <span>Express JS</span>
-                    <div class="boot-progress ldBar" data-value="50" data-transition-in="true"></div>
+                    <div class="git" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>Git - Github</span>
+                    </div>
                 </li>
                 <li>
-                    <span>MongoDB</span>
-                    <div class="mongo-progress ldBar" data-value="45" data-transition-in="true"></div>
+                    <div class="express" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>Express JS</span>
+                    </div>
                 </li>
                 <li>
-                    <span>MySQL</span>
-                    <div class="mysql-progress ldBar" data-value="50" data-transition-in="true"></div>
+                    <div class="mongo" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>MongoDB</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="mysql" 
+                    data-aos="zoom-in" 
+                    data-aos-duration = "1100"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    >
+                        <span>MySQL</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -214,11 +276,11 @@
                     </div>
                 </div>
                 <div class="contact_form">
-                    <form action="">
-                        <input type="text" placeholder="Nom complet">
-                        <input type="email" name="email" placeholder="Adresse email">
-                        <input type="tel" placeholder="Numéro de téléphone">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    <form method="post" action="contact.php">
+                        <input type="text" name="name" placeholder="Nom complet" required>
+                        <input type="email" name="email" placeholder="Adresse email" required>
+                        <input type="tel" name="phone" placeholder="Numéro de téléphone">
+                        <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                         <button type="submit">Envoyer</button>
                     </form>
                 </div>
@@ -234,7 +296,6 @@
     </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./lib/typed.min.js"></script>
-    <script src="./lib/loading-bar.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./lib/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/0c464140a2.js" crossorigin="anonymous"></script>
