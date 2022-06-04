@@ -3,7 +3,7 @@ body{
             box-sizing: border-box;
     margin: 0;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../assets/bg.JPG);
+    background-image: url(../assets/globe.jpg);
     background-size: cover;
     background-attachment: fixed;
     letter-spacing: 1px;
@@ -219,7 +219,7 @@ h3{
         -ms-flex-direction: column;
             flex-direction: column;
     color: #fff;
-    background-color: #000000bd;
+    background-color: #000000c2;
     padding-top: 150px;
     padding-bottom: 500px;
 }
@@ -346,7 +346,7 @@ h3{
      -webkit-box-align: center;
          -ms-flex-align: center;
              align-items: center;
-     background-color: #000000c7;
+     background-color: #000000c2;
      padding: 100px 0;
  }
 
@@ -525,7 +525,7 @@ h3{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #000000c7;
+    background-color: #000000c2;
     padding: 100px 0;
     overflow: hidden;
 }
@@ -673,7 +673,6 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
-    opacity: .9;
 }
 @media screen and (max-width: 768px) {
     .about_photo{
@@ -753,7 +752,7 @@ h3{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #000000c7;
+    background-color: #000000c2;
     padding: 100px 0;
 }
 @media screen and (max-width: 768px) {
