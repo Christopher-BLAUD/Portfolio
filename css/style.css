@@ -8,6 +8,7 @@ body{
     background-attachment: fixed;
     letter-spacing: 1px;
     color: #fff;
+    position: relative;
 }
 @media screen and (max-width: 768px) {
     body{
@@ -15,6 +16,36 @@ body{
         background-size: contain;
         background-attachment: unset;
     }
+}
+
+.scroll-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 800px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #939dab9c;
+    border-radius: 10px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+@media screen and (max-width: 768px) {
+    .scroll-top.active{
+        visibility: visible;
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+
+.scroll-top i{
+    color: #fff;
+    font-size: 1.5em;
+    scroll-behavior: smooth;
 }
 
 main{

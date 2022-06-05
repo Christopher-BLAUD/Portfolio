@@ -23,3 +23,15 @@ $('.navbar ul li').on('click', () => {
     $('.navbar ul').removeClass('reveal');
     $('.navbar_icon').removeClass('active')
 })
+
+// Scroll top
+$(window).on('scroll', () => {
+    $('.scroll-top').toggleClass('active', window.scrollY > 500)
+})
+
+$('.scroll-top').on('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
