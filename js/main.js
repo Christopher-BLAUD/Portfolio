@@ -14,13 +14,13 @@ splide.mount();
 
 // Navbar reveal
 $('.navbar_icon').on('click',() => {
-    $('.navbar ul').toggleClass('reveal');
+    $('.navbar').toggleClass('reveal');
     $('.navbar_icon').toggleClass('active');
 
 })
 
 $('.navbar ul li').on('click', () => {
-    $('.navbar ul').removeClass('reveal');
+    $('.navbar').removeClass('reveal');
     $('.navbar_icon').removeClass('active')
 })
 
