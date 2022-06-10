@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -25,6 +24,9 @@
         <span></span>
     </div>
     <header>
+        <div class="header_title">
+            <span>Christopher BLAUD</span>
+        </div>
         <nav class="navbar">
             <ul>
                 <li>
@@ -51,6 +53,10 @@
     <main>
         <section class="info">
             <div class="info_container">
+                <span class="info_hello" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">Bonjour, je suis</span>
+                <h1 data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1500">Christopher BLAUD</h1>
+                <h2><span class="auto-type"></span></h2>
+                <button><a href="./assets/CV_christopher_blaud.pdf" target="_blank">Télécharger mon CV</a></button>
             </div>
         </section>
         <section class="about" id="about">
@@ -64,12 +70,12 @@
                 </p>
             </div>
         </section>
-        <section class="splide" aria-labelledby="carousel-heading" id="portfolio">
-            <h3 id="carousel-heading">PORTFOLIO</h3>
-            <span class="splide__text">Mes derniers projets réalisés</span>          
-            <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
+        <section id="portfolio">
+            <h3>PORTFOLIO</h3>
+            <span >Mes derniers projets réalisés</span>          
+            <div>
+                  <ul>
+                    <li>
                         <a href="https://christopher-blaud.github.io/P2_Booki/" target="_blank">
                             <img src="./assets/Booki_edited_s.png" alt="Photo du site de booki">
                         </a>
@@ -80,7 +86,7 @@
                             Le design est basé sur les principes du Material Design.
                         </p>
                     </li>
-                    <li class="splide__slide">
+                    <li>
                         <a href="https://christopher-blaud.github.io/BlaudChristopher_3_22112021/" target="_blank">
                             <img src="./assets/omf_s.png" alt="Photo du site de ohmyfood">
                         </a>
@@ -90,7 +96,7 @@
                             Ce site répertorie les menus des restaurants gastronomiques
                         </p>
                     </li>
-                    <li class="splide__slide">
+                    <li>
                         <a href="https://christopher-blaud.github.io/P4_blaud_christopher/" target="_blank">
                             <img src="./assets/chouette_s.jpg" alt="Photo du site de la chouette agence">
                         </a>
@@ -102,7 +108,7 @@
                             d'optimiser son référencement.
                         </p>
                     </li>
-                    <li class="splide__slide">
+                    <li>
                         <a href="https://github.com/Christopher-BLAUD/P5_kanap" target="_blank">
                             <img src="./assets/kanap_s.png" alt="Photo du site de kanap">
                         </a>
@@ -112,7 +118,7 @@
                             Il s'agit de la création d'un site web e-commerce.
                         </p>
                     </li>
-                    <li class="splide__slide">
+                    <li>
                         <a href="https://github.com/Christopher-BLAUD/P6_Piiquante" target="_blank">
                             <img src="./assets/api_s.png" alt="Photo du l'application hot takes">
                         </a>
@@ -122,7 +128,7 @@
                             Création d'une API sécurisée pour une application web de critique d'avis gastronomique.
                         </p>
                     </li>
-                    <li class="splide__slide">
+                    <li>
                         <a href="https://github.com/Christopher-BLAUD/P6_Piiquante" target="_blank">
                             <img src="./assets/groupo.png" alt="Photo du logo Groupomania">
                         </a>
@@ -303,8 +309,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./lib/typed.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./lib/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/0c464140a2.js" crossorigin="anonymous"></script>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

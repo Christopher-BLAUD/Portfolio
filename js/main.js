@@ -8,19 +8,16 @@ let typed = new Typed(".auto-type", {
 // Animation On Scroll
 AOS.init();
 
-// Carousel
-let splide = new Splide('.splide');
-splide.mount();
 
 // Navbar reveal
-$('.navbar_icon').on('click',() => {
+$('.navbar_icon').on('click', () => {
     $('.navbar').toggleClass('reveal');
-    $('.navbar_icon').toggleClass('active');
+    $('.navbar_icon').toggleClass('active')
 })
 
 $('.navbar ul li').on('click', () => {
-    $('.navbar').removeClass('reveal');
-    $('.navbar_icon').removeClass('active')
+    $('.navbar').toggleClass('reveal');
+    $('.navbar_icon').toggleClass('active')
 })
 
 // Scroll top
