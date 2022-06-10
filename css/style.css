@@ -3,7 +3,6 @@ body{
             box-sizing: border-box;
     margin: 0;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../assets/globe_small_2.jpg);
     background-size: cover;
     background-attachment: fixed;
     letter-spacing: 1px;
