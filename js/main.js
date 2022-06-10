@@ -2,7 +2,7 @@
 let typed = new Typed(".auto-type", {
     strings: ["Développeur web."],
     typeSpeed: 60,
-    startDelay: 1000
+    startDelay: 2500
 })
 
 // Animation On Scroll
@@ -16,7 +16,6 @@ splide.mount();
 $('.navbar_icon').on('click',() => {
     $('.navbar').toggleClass('reveal');
     $('.navbar_icon').toggleClass('active');
-
 })
 
 $('.navbar ul li').on('click', () => {

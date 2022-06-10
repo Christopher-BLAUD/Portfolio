@@ -59,13 +59,17 @@ main{
 }
 
 h3{
-    font-size: 40px;
+    font-size: 50px;
+    margin-left: 30px;
     color: #f7d630;
+    border: 2px solid #FFF1AA;
+        padding: 10px;
 }
 @media screen and (max-width: 768px) {
     h3{
         font-size: 33px;
         text-align: center;
+        margin-left: 0;
     }
 }
 
@@ -259,6 +263,7 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-family: Arvo, Verdana, Geneva, Tahoma, sans-serif;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -276,15 +281,34 @@ header{
     }
 }
 
+.info_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 45px;
+    border-top: 1px solid #fff;
+}
+@media screen and (max-width: 768px) {
+    .info_container{
+        padding: 45px 0;
+    }
+}
+
 .info h1{
-    font-weight: 600;
+    font-weight: bold;
     font-size: 45px;
     text-align: center;
     color: #FFEA80;
 }
+@media screen and (max-width: 768px) {
+    .info h1{
+        margin: 10px 0;
+    }
+}
 
 .info h1 span{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .info h2{
@@ -296,17 +320,22 @@ header{
     .info h2{
         font-size: 25px;
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 }
 .info h2 span{
     margin-left: 5px;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .info_hello{
-    font-size: 20px;
+    font-size: 45px;
+}
+@media screen and (max-width: 768px) {
+    .info_hello{
+        font-size: 30px;
+    }
 }
 
 .info button{
@@ -325,11 +354,17 @@ header{
     background-color: #FFEA80;
     font-size: 16px;
     font-weight: 700;
-    margin: 70px 0;
+    margin: 100px 0;
     -webkit-transition: background-color .3s;
     -o-transition: background-color .3s;
     transition: background-color .3s;
 }
+@media screen and (max-width: 768px) {
+    .info button{
+        margin: 40px 0;
+    }
+}
+
 
 .info button:hover > a{
     color: #fff;
@@ -473,6 +508,12 @@ header{
     -webkit-box-shadow: 0 0 21px #ffea82;
             box-shadow: 0 0 21px #ffea82;
 }
+
+@media screen and (max-width: 768px) {
+    .skills h3{
+        margin: 0 15px;
+    }
+}
 /* Expérience */
 .xp{
     display: -webkit-box;
@@ -485,14 +526,10 @@ header{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fee564;
-    -webkit-box-shadow: 0 0 21px #fee564;
-            box-shadow: 0 0 21px #fee564;
     padding: 60px 0;
 }
 
 .xp h3{
-    color: #03285a;
     margin-top: 0;
     margin-bottom: 100px;
 }
@@ -538,7 +575,7 @@ header{
     position: relative;
     width: 2px;
     height: 630px;
-    background-color: #00439f;
+    background-color: #FFF1AA;
     margin: 0 60px;
 }
 @media screen and (max-width: 768px) {
@@ -564,7 +601,7 @@ header{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #03285a;
+    background-color: #f7d630;
 }
 
 .xp_container::after{
@@ -576,7 +613,7 @@ header{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #03285a;
+    background-color: #f7d630;
 }
 
 @media screen and (max-width: 767px) {
@@ -586,21 +623,20 @@ header{
 }
 
 .xp_container span{
-    color: #03295aa4;
-    font-weight: bold;
+    color: #f7d630;
 }
 
 .xp_container h5{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
-    color: #03285a;
+    color: #FFF1AA;
     margin-bottom: 0;
     margin-top: 20px;
 }
 
 .xp_container h6{
     font-size: 20px;
-    color: #03295aa4;
+    color: #f7d630;
 }
 
 .xp ul{
@@ -619,8 +655,8 @@ header{
 }
 
 .xp ul li{
-    color: #0f007e;
-    font-weight: 500;
+    color: #FFF1AA;
+    font-weight: 400;
     margin: 15px 0;
 }
 /* Carousel */
@@ -638,25 +674,33 @@ header{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 100px 0;
+    padding: 50px 0;
     overflow: hidden;
 }
 @media screen and (max-width: 768px) {
     .splide{
-        padding: 50px 0;
+        padding: 20px 0;
     }
 }
 
 .splide__text{
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    .splide__text{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
 }
 
 .splide__pagination{
-    bottom: 5.5em;
+    bottom: 4.5em;
+    font-weight: 500;
 }
 @media screen and (max-width: 768px) {
     .splide__pagination{
-        bottom: 5em;
+        bottom: 3em;
     }
 }
 
@@ -669,7 +713,7 @@ header{
 }
 
 .splide__arrow--prev{
-    left: 24em;
+    left: 20em;
 }
 @media screen and (max-width: 768px) {
     .splide__arrow--prev{
@@ -678,7 +722,7 @@ header{
 }
 
 .splide__arrow--next{
-    right: 24em;
+    right: 20em;
 }
 @media screen and (max-width: 768px) {
     .splide__arrow--next{
@@ -703,7 +747,14 @@ header{
 }
 
 .splide__slide a{
-    width: 300px;
+    width: 400px;
+    height: 400px;
+}
+@media screen and (max-width: 768px){
+    .splide__slide a{
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .splide__list{
@@ -741,6 +792,7 @@ header{
     padding: 0 15px;
     font-weight: 200;
     word-wrap: break-word;
+    text-align: center;
 }
 @media screen and (max-width: 768px){
     .splide__slide p{
@@ -794,10 +846,11 @@ header{
 }
 @media screen and (max-width: 768px) {
     .about_photo{
-        height: 440px;
+        height: 350px;
         width: auto;
         opacity: 1;
-        background-position: center;
+        background-position: top;
+        background-image: url(../assets/me_without_bg.PNG);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -838,6 +891,8 @@ header{
 
 .about_text h3{
     color: #2E1CB4;
+    align-self: center;
+    font-size: 30px;
 }
 @media screen and (max-width: 768px) {
     .about_text h3{
@@ -1063,14 +1118,17 @@ header{
         -ms-flex-align: center;
             align-items: center;
     margin: 20px 0;
+
 }
 
 .contact_form input, textarea{
     width: 400px;
     margin: 10px 0;
-    border-radius: 20px;
-    border: none;
     padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #e2bd06;
+    color: #fff;
 }
 @media screen and (max-width: 768px) {
     .contact_form input, textarea{
@@ -1083,35 +1141,44 @@ header{
     }
 }
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 .contact_form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     font-weight: 600;
-    color: #00429fa6;
+    color: #ffea82;
 }
 
 .contact_form input::-moz-placeholder, textarea::-moz-placeholder{
     font-weight: 600;
-    color: #00429fa6;
+    color: #ffea82;
 }
 
 .contact_form input:-ms-input-placeholder, textarea:-ms-input-placeholder{
     font-weight: 600;
-    color: #00429fa6;
+    color: #ffea82;
 }
 
 .contact_form input::-ms-input-placeholder, textarea::-ms-input-placeholder{
     font-weight: 600;
-    color: #00429fa6;
+    color: #ffea82;
 }
 
 .contact_form input::placeholder, textarea::placeholder{
     font-weight: 600;
-    color: #00429fa6;
+    color: #ffea82;
 }
 
 .contact_form textarea{
     resize: none;
     font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
+    border: 1px solid #e2bd06;
 }
 
 .contact_form button{
