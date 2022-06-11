@@ -62,7 +62,9 @@
         <section class="about" id="about">
             <div class="about_photo"></div>
             <div class="about_text">
-                <h3>À PROPOS DE MOI</h3>
+                <div class="about_text_title">
+                    <h3>À PROPOS DE MOI</h3>
+                </div>
                 <p>
                     J'ai toujours été attiré par le monde du web et des nouvelles technologies.
                     C'est en 2021 que par le biais d'une reconversion professionnelle, et aussi de mon désir insatiable d'apprendre, que j'ai décidé de bifurquer vers une carrière de Développeur web.                    
@@ -70,79 +72,107 @@
                 </p>
             </div>
         </section>
-        <section id="portfolio">
-            <h3>PORTFOLIO</h3>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio_title">
+                <h3>PORTFOLIO</h3>
+            </div>
             <span >Mes derniers projets réalisés</span>          
-            <div>
+            <div class="portfolio_container">
                   <ul>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="https://christopher-blaud.github.io/P2_Booki/" target="_blank">
-                            <img src="./assets/Booki_edited_s.png" alt="Photo du site de booki">
+                            <div class="portfolio-card_img">
+                                <img src="./assets/Booki.png" alt="Photo du site de booki">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>Booki</h4>
+                                <p>
+                                    <span>Projet 2 du parcours Développeur Web Openclassrooms</span>
+                                    Ce site est le résultat de l'intégration d'une maquette pour Booki, une petite entreprise proposant un outil de planification de vacances.
+                                    Le design est basé sur les principes du Material Design.
+                                </p>
+                            </div>
                         </a>
-                        <h4>Booki</h4>
-                        <p>
-                            <strong>Projet 2 du parcours Développeur Web Openclassrooms</strong><br>
-                            Ce site est le résultat de l'intégration d'une maquette pour Booki, une petite entreprise proposant un outil de planification de vacances.
-                            Le design est basé sur les principes du Material Design.
-                        </p>
                     </li>
-                    <li>
-                        <a href="https://christopher-blaud.github.io/BlaudChristopher_3_22112021/" target="_blank">
-                            <img src="./assets/omf_s.png" alt="Photo du site de ohmyfood">
+                    <li class="portfolio-card--small">
+                        <a href="https://christopher-blaud.github.io/P2_Booki/" target="_blank">
+                            <div class="portfolio-card_img">
+                                <img src="./assets/omf.png" alt="Photo du site de ohmyfood">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>Ohmyfood</h4>
+                                <p>
+                                    <span>Projet 3 du parcours Développeur Web Openclassrooms</span>
+                                    Ce site répertorie les menus des restaurants gastronomiques
+                                </p>
+                            </div>
                         </a>
-                        <h4>Ohmyfood</h4>
-                        <p>
-                            <strong>Projet 3 du parcours Développeur Web Openclassrooms</strong><br>
-                            Ce site répertorie les menus des restaurants gastronomiques
-                        </p>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="https://christopher-blaud.github.io/P4_blaud_christopher/" target="_blank">
-                            <img src="./assets/chouette_s.jpg" alt="Photo du site de la chouette agence">
-                        </a>
-                        <h4>La chouette agence</h4>
-                        <p>
-                            <strong>Projet 4 du parcours Développeur Web Openclassrooms</strong><br>
+                            <div class="portfolio-card_img">
+                                <img src="./assets/chouette.jpg" alt="Photo du site de la chouette agence">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>La chouette agence</h4>
+                                <p>
+                                    <span>Projet 4 du parcours Développeur Web Openclassrooms</span>
                             Ici le but étant d'optimiser un site web existant en améliorant sa vitesse de chargement,
                             réduisant sa taille, le rendre accessible et en accord avec les standards WCAG ainsi que 
                             d'optimiser son référencement.
-                        </p>
+                                </p>
+                            </div>
+                        </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card--small">
                         <a href="https://github.com/Christopher-BLAUD/P5_kanap" target="_blank">
-                            <img src="./assets/kanap_s.png" alt="Photo du site de kanap">
-                        </a>
-                        <h4>Kanap</h4>
-                        <p>
-                            <strong>Projet 5 du parcours Développeur Web Openclassrooms</strong><br>
+                            <div class="portfolio-card_img">
+                                <img src="./assets/Kanap.PNG" alt="Photo du site de kanap">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>Kanap</h4>
+                                <p>
+                                    <span>Projet 5 du parcours Développeur Web Openclassrooms</span>
                             Il s'agit de la création d'un site web e-commerce.
-                        </p>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Christopher-BLAUD/P6_Piiquante" target="_blank">
-                            <img src="./assets/api_s.png" alt="Photo du l'application hot takes">
+                                </p>
+                            </div>
                         </a>
-                        <h4>Piiquante</h4>
-                        <p>
-                            <strong>Projet 6 du parcours Développeur Web Openclassrooms</strong><br>
+                    </li>
+                    <li class="portfolio-card--medium">
+                        <a href="https://github.com/Christopher-BLAUD/P6_Piiquante" target="_blank">
+                            <div class="portfolio-card_img">
+                                <img src="./assets/api_s.png" alt="Photo du l'application hot takes">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>Piiquante</h4>
+                                <p>
+                                    <span>Projet 6 du parcours Développeur Web Openclassrooms</span>
                             Création d'une API sécurisée pour une application web de critique d'avis gastronomique.
-                        </p>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Christopher-BLAUD/P6_Piiquante" target="_blank">
-                            <img src="./assets/groupo.png" alt="Photo du logo Groupomania">
+                                </p>
+                            </div>
                         </a>
-                        <h4>Groupomania</h4>
-                        <p>
-                            <strong>Projet 7 du parcours Développeur Web Openclassrooms</strong><br>
+                    </li>
+                    <li class="portfolio-card--small">
+                        <a href="https://github.com/Christopher-BLAUD/Groupomania_P7" target="_blank">
+                            <div class="portfolio-card_img">
+                                <img src="./assets/groupo.png" alt="Photo de l'application groupomani">
+                            </div>
+                            <div class="portfolio-card_info">
+                                <h4>Groupomania</h4>
+                                <p>
+                                    <span>Projet 7 du parcours Développeur Web Openclassrooms</span>
                             Ceci est un réseau social d'entreprise dédié aux salariés de Groupomania
-                        </p>
+                                </p>
+                            </div>
+                        </a>
                     </li>
                   </ul>
             </div>
         </section>
         <section class="xp" id="xp">
-            <h3>EXPÉRIENCE</h3>
+            <div class="xp_title">
+                <h3>EXPÉRIENCE</h3>
+            </div>
             <div class="xp_container">
                 <div class="xp-line" 
                 data-aos="slide-down" 
@@ -164,109 +194,120 @@
                         <li>Optimisation des performances et de l'accessibilité d'un site web</li>
                         <li>Optimisation du référencement SEO</li>
                         <li>Validation de données - Création de tests unitaires</li>
-                        <li>Interaction avec une API</li>
+                        <li>Intéraction avec une API</li>
                         <li>Stockage de données de façon sécurisée</li>
                         <li>Mise en œuvre d' opérations CRUD</li>
-                        <li>Développement de l’interface d’un site web grâce à un framework front-end</li>
+                        <li>Développement de l’interface d’un site web grâce à un framework frontend</li>
                         <li>Implémentation d'un stockage de données sécurisé en utilisant une base de données</li>
                     </ul>
                 </div>
             </div>
         </section>
         <section class="skills" id="skills">
-            <h3>MES COMPETENCES TECHNIQUES</h3>
-            <ul>
-                <li>
-                    <div class="html" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>HTML</span>
-                    </div>
-                </li>
-                <li>                    
-                    <div class="css" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>CSS</span>
-                    </div>
-                </li>
-                <li>                    
-                    <div class="js" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>Javascript</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="vue" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>Vue JS</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="boot" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>Bootstrap</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="git" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>Git - Github</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="express" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>Express JS</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="mongo" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>MongoDB</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="mysql" 
-                    data-aos="zoom-in" 
-                    data-aos-duration = "1100"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                    >
-                        <span>MySQL</span>
-                    </div>
-                </li>
-            </ul>
+            <div class="skills_title">
+                <h3>COMPETENCES TECHNIQUES</h3>
+            </div>
+            <div class="skills_list">
+                <ul>
+                    <h5>Frontend</h5>
+                    <li>
+                        <div class="html" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>HTML</span>
+                        </div>
+                    </li>
+                    <li>                    
+                        <div class="css" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>CSS</span>
+                        </div>
+                    </li>
+                    <li>                    
+                        <div class="js" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>Javascript</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vue" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>Vue JS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="boot" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>Bootstrap</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <h5>Backend</h5>
+                    <li>
+                        <div class="express" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>Express JS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mongo" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>MongoDB</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mysql" 
+                        data-aos="zoom-in" 
+                        data-aos-duration = "1100"
+                        data-aos-delay="300"
+                        data-aos-once="true"
+                        >
+                            <span>MySQL</span>
+                        </div>
+                    </li>
+                    </ul>
+                    <ul>
+                        <h5>Versioning</h5>
+                        <li>
+                            <div class="git" 
+                            data-aos="zoom-in" 
+                            data-aos-duration = "1100"
+                            data-aos-delay="300"
+                            data-aos-once="true"
+                            >
+                                <span>Git - Github</span>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
         </section>
         <section class="contact" id="contact">
             <div class="contact_container">
