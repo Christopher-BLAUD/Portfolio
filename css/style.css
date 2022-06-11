@@ -436,7 +436,7 @@ header nav{
 }
 @media only screen and (max-width: 768px) {
     .about_photo{
-        width: 325px;
+        width: 340px;
         height: 471px;
         margin-top: 20px;
         background: url(../assets/me_without_bg.PNG);
