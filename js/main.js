@@ -1,6 +1,6 @@
 // Animation saisie de texte
 let typed = new Typed(".auto-type", {
-    strings: ["Bonjour, ^1000  je suis Christopher BLAUD ^1000 Développeur Web."],
+    strings: ["Développeur web."],
     typeSpeed: 60,
     startDelay: 1000
 })

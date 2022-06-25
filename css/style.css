@@ -79,12 +79,6 @@ header nav{
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-/* @media only screen and (max-width: 768px) {
-    header nav{
-        visibility: hidden;
-        opacity: 0;
-    }
-} */
 
 .navbar ul{
     display: -webkit-box;
@@ -303,7 +297,7 @@ header nav{
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 190px;
+    top: 230px;
     left: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -312,20 +306,17 @@ header nav{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 570px;
+    width: 715px;
     color: #fff;
-    font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
 }
 @media only screen and (max-width: 768px) {
     .info_container{
-        margin-top: 170px;
+        margin-top: 190px;
         width: 340px;        
         position: initial;
         font-size: 28px;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 768px) and (orientation: landscape){
@@ -342,25 +333,50 @@ header nav{
     }
 }
 
-.info_hello{
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-.info h1{
+.info_container div{
+    display: flex;
+    align-items: center;
     margin: 10px 0;
-    font-size: inherit;
+}
+@media only screen and (max-width: 768px){
+    .info_container div{
+        justify-content: center;
+    }
 }
 
-.info h2{
+/* 
+.info h1{
     margin: 0;
     padding: 0 23px;
     font-size: inherit;
-    font-weight: 500;
+    font-weight: 600;
 }
 @media only screen and (max-width: 768px) {
-    .info h2{
+    .info h1{
         text-align: center;
+    }
+} */
+
+.info h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFE223;
+}
+@media only screen and (max-width: 768px){
+    .info h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+.info_container_name{
+    font-size: 60px;
+    font-weight: 800;
+}
+@media only screen and (max-width: 768px){
+    .info_container_name{
+        font-size: 40px;
     }
 }
 
@@ -391,8 +407,8 @@ header nav{
             transform: rotate(90deg);
     visibility: hidden;
     opacity: 0;
-    -webkit-animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 8.5s both;
-            animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 8.5s both;
+    -webkit-animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
+            animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
 }
 @media only screen and (max-width: 768px) {
     .info_scroll{
@@ -402,9 +418,9 @@ header nav{
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     .info_scroll{
-        -webkit-animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 8.5s both;
-                animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 8.5s both;
-        left: 40%;
+        -webkit-animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
+                animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
+        left: 44%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -983,6 +999,7 @@ header nav{
     top: 5px;
     width: 2px;
     height: 785px;
+    z-index: -1;
     background-color: #930000;
 }
 @media only screen and (max-width: 768px) {
