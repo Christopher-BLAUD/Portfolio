@@ -8,7 +8,7 @@
     <meta name="title" content="Christopher BLAUD | Développeur Web">
     <title>Christopher BLAUD | Développeur Web</title>
     <link rel="stylesheet" href="./css/splide.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
@@ -17,10 +17,10 @@
     <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
-    <div class="scroll-top">
+    <div class="scroll-top" aria-label="remonter en haut de la page" aria-hidden="true">
         <i class="fa-solid fa-circle-chevron-up"></i>
     </div>
-    <div class="navbar_icon" id="link-navbar">
+    <div class="navbar_icon" id="link-navbar" aria-label="afficher la barre de navigation">
         <span></span>
     </div>
     <header>
@@ -53,14 +53,14 @@
     <main>
         <section class="info">
             <div class="info_container">
-                <span class="info_hello" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">Bonjour, je suis</span>
-                <h1 data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1500">Christopher BLAUD</h1>
                 <h2><span class="auto-type"></span></h2>
-                <button><a href="./assets/CV_christopher_blaud.pdf" target="_blank">Télécharger mon CV</a></button>
+            </div>
+            <div class="info_scroll">
+                <i class="fas fa-arrows-alt-h"></i>
             </div>
         </section>
         <section class="about" id="about">
-            <div class="about_photo"></div>
+            <div class="about_photo" aria-label="photo du propriétaire du site"></div>
             <div class="about_text">
                 <div class="about_text_title">
                     <h3>À PROPOS DE MOI</h3>
@@ -70,10 +70,11 @@
                     C'est en 2021 que par le biais d'une reconversion professionnelle, et aussi de mon désir insatiable d'apprendre, que j'ai décidé de bifurquer vers une carrière de Développeur web.                    
                     Une réelle opportunité pour moi de travailler dans un domaine qui me passionne et pour lequel je suis déterminé à mettre à profit mes compétences.
                 </p>
+                <button><a href="./assets/CV_christopher_blaud.pdf" target="_blank">Télécharger mon CV</a></button>
             </div>
         </section>
         <section class="portfolio" id="portfolio">
-            <div class="portfolio_title">
+            <div class="portfolio_title" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                 <h3>PORTFOLIO</h3>
             </div>
             <span class="portfolio_title_text">Mes derniers projets réalisés</span>          
@@ -170,7 +171,7 @@
             </div>
         </section>
         <section class="xp" id="xp">
-            <div class="xp_title">
+            <div class="xp_title" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                 <h3>EXPÉRIENCE</h3>
             </div>
             <div class="xp_container">
@@ -204,115 +205,86 @@
             </div>
         </section>
         <section class="skills" id="skills">
-            <div class="skills_title">
+            <div class="skills_title" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                 <h3>COMPETENCES TECHNIQUES</h3>
             </div>
             <div class="skills_list">
-                <ul>
+                <div class="skills_list_container">
                     <h5>Frontend</h5>
-                    <li>
-                        <div class="html" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>HTML</span>
-                        </div>
-                    </li>
-                    <li>                    
-                        <div class="css" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>CSS</span>
-                        </div>
-                    </li>
-                    <li>                    
-                        <div class="js" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>Javascript</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="vue" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>Vue JS</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="boot" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>Bootstrap</span>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <h5>Backend</h5>
-                    <li>
-                        <div class="express" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>Express JS</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mongo" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>MongoDB</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="mysql" 
-                        data-aos="zoom-in" 
-                        data-aos-duration = "1100"
-                        data-aos-delay="300"
-                        data-aos-once="true"
-                        >
-                            <span>MySQL</span>
-                        </div>
-                    </li>
-                </ul>
                     <ul>
-                        <h5>Versioning</h5>
                         <li>
-                            <div class="git" 
-                            data-aos="zoom-in" 
-                            data-aos-duration = "1100"
-                            data-aos-delay="300"
-                            data-aos-once="true"
-                            >
+                            <div class="html" >
+                                <span>HTML</span>
+                            </div>
+                        </li>
+                        <li>                    
+                            <div class="css">
+                                <span>CSS</span>
+                            </div>
+                        </li>
+                        <li>                    
+                            <div class="js">
+                                <span>Javascript</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vue">
+                                <span>Vue JS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="react">
+                                <span>React JS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boot">
+                                <span>Bootstrap</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills_list_container">
+                    <h5>Backend</h5>
+                    <ul>
+                        <li>
+                            <div class="express">
+                                <span>ExpressJS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mongo">
+                                <span>MongoDB</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mysql">
+                                <span>MySQL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="php">
+                                <span>PHP</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills_list_container">
+                    <h5>Versioning</h5>
+                    <ul>
+                        <li>
+                            <div class="git">
                                 <span>Git - Github</span>
                             </div>
                         </li>
                     </ul>
+                </div>
             </div>
         </section>
         <section class="contact" id="contact">
             <div class="contact_container">
                 <div class="contact_info">
-                    <h4>CONTACT</h4>
+                    <h4 data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">CONTACT</h4>
                     <p>
                         Pour tout renseignement, n'hésitez pas à me contacter via les coordonnées ci-dessous ou en remplissant ce formulaire.
                         Je vous répondrai dans les plus bref délais.
@@ -345,8 +317,9 @@
         </section>
     </main>
     <footer>
-        <span>© 2022 by Christopher BLAUD.</span>
+        <span>© 2022 by Christopher BLAUD. Tous droits réservés</span>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./lib/typed.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
