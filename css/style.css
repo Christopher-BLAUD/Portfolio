@@ -60,7 +60,7 @@ header{
     overflow: hidden;
     background-color: #000;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -91,7 +91,7 @@ header nav{
         -ms-flex-align: center;
             align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar ul{
         position: fixed;
         -webkit-box-orient: vertical;
@@ -113,6 +113,29 @@ header nav{
         transition: all .5s;
     }    
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar ul{
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;    
+        z-index: 3;
+        background-color: #000;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }    
+}
+
 .reveal{
     visibility: visible!important;
     opacity: 1!important;
@@ -122,9 +145,14 @@ header nav{
     margin: 0 20px;
     list-style: none;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar ul li {
         margin: 10px 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar ul li {
+        margin: 30px 0;
     }
 }
 
@@ -136,7 +164,12 @@ header nav{
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .navbar a{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .navbar a{
         font-size: 25px;
     }
@@ -170,7 +203,13 @@ header nav{
     visibility: hidden;
     opacity: 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .navbar_icon{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .navbar_icon{
         visibility: visible;
         opacity: 1;
@@ -279,7 +318,7 @@ header nav{
             box-shadow: 0 0 21px #000;
     overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .info{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -310,7 +349,7 @@ header nav{
     color: #fff;
     font-size: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .info_container{
         margin-top: 190px;
         width: 340px;        
@@ -319,12 +358,12 @@ header nav{
         text-align: center;
     }
 }
-@media only screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape){
     .info_container{
         margin-top: 50px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .info_container{
         position: absolute;
         margin: 0;
@@ -334,13 +373,19 @@ header nav{
 }
 
 .info_container div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 10px 0;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .info_container div{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -351,7 +396,7 @@ header nav{
     font-size: inherit;
     font-weight: 600;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .info h1{
         text-align: center;
     }
@@ -363,7 +408,7 @@ header nav{
     font-weight: 500;
     color: #FFE223;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .info h1{
         font-size: 28px;
         font-weight: 700;
@@ -374,7 +419,7 @@ header nav{
     font-size: 60px;
     font-weight: 800;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .info_container_name{
         font-size: 40px;
     }
@@ -410,13 +455,13 @@ header nav{
     -webkit-animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
             animation: scroll 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .info_scroll{
         left: 37%;
     }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     .info_scroll{
         -webkit-animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
                 animation: scroll-landscape 1s ease-in-out infinite alternate, reveal 1s ease-in-out 3s both;
@@ -425,7 +470,7 @@ header nav{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .info_scroll{
-        left: 45%;
+        left: 47%;
     }
 }
 
@@ -498,7 +543,7 @@ header nav{
     padding: 60px 0; 
     overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -507,7 +552,15 @@ header nav{
         overflow: hidden;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .about{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .about{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -540,7 +593,7 @@ header nav{
     margin-top: 50px;
     margin-left: 50px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about_photo{
         width: 340px;
         height: 471px;
@@ -552,7 +605,7 @@ header nav{
                 box-shadow: 0px -28px 15px #fff inset;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .about_photo{
         width: 100%;
         background-position: right;
@@ -560,20 +613,19 @@ header nav{
         padding-top: 88px;
     }
 }
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     .about_photo{
         width: 100%;
         background-position: right;
         height: 560px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
     .about_photo{
         background: url(../assets/me_without_bg.PNG);
         background-repeat: no-repeat;
         background-position: right;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0;
     }
 }
 
@@ -593,15 +645,21 @@ header nav{
             justify-content: center;
     width: 50%;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about_text{
         width: 100%;
         padding-top: 20px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
     .about_text{
         width: 100%;
+    }
+}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .about_text{
+        width: 100%;
+        margin-top: 80px;
     }
 }
 
@@ -614,12 +672,12 @@ header nav{
     padding: 35px 65px;
     font-weight: 600;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about_text p{
         padding: 20px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .about_text p{
         padding: 20px 115px;
     }
@@ -641,8 +699,9 @@ header nav{
     padding-left: 45px;
     width: 316px;
     height: 150px;
+    color: #930000;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about_text_title{
         width: 260px;
         height: 100px;
@@ -689,7 +748,7 @@ header nav{
     overflow: hidden;
     padding-top: 100px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio{
         background-attachment: initial;
     }
@@ -717,11 +776,11 @@ header nav{
     color: #930000;
     font-size: 30px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio_title{
         width: 200px;
         height: 100px;
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 45px;
         margin-left: 20px;
     }
@@ -735,7 +794,7 @@ header nav{
     color: #930000;
     font-weight: 500;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio_title_text{
         padding-left: 20px;
     }
@@ -751,7 +810,7 @@ header nav{
         justify-content: space-around;
     padding-top: 50px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio ul{
         padding-top: 0;
         padding: 25px;
@@ -773,7 +832,7 @@ header nav{
     transition: .5s ease-in-out;
     background-color: #fff;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio-card{
         height: 420px;
     }
@@ -784,7 +843,18 @@ header nav{
         height: 350px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .portfolio-card{
+        height: 420px;
+    }
+    .portfolio-card--small{
+        height: 320px;
+    }
+    .portfolio-card--medium{
+        height: 350px;
+    }
+}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .portfolio-card{
         height: 420px;
     }
@@ -827,18 +897,18 @@ header nav{
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio-card_img{
         left: 0;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .portfolio-card_img{
         left: 20px;
     }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     .portfolio-card_img{
         left: 20px;
     }
@@ -864,14 +934,21 @@ header nav{
     transition: 350ms ease-in-out;
     margin-top: -140px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .portfolio-card_info{
         visibility: visible;
         opacity: 1;
         margin-top: -67px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .portfolio-card_info{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -67px;
+    }
+}
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .portfolio-card_info{
         visibility: visible;
         opacity: 1;
@@ -941,18 +1018,18 @@ header nav{
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 90px;
-    width: 250px;
+    width: 270px;
     height: 150px;
     margin: 50px 0;
     margin-left: 40px;
     color: #930000;
     font-size: 30px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .xp_title{
         width: 200px;
         height: 100px;
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 45px;
         margin-left: 20px;
     }
@@ -1002,7 +1079,7 @@ header nav{
     z-index: -1;
     background-color: #930000;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .xp-line{
         left: 149px;
         height: 900px;
@@ -1017,7 +1094,7 @@ header nav{
     background-color: #fff;
     font-weight: 500;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .xp-description li{
         width: 300px;
     }
@@ -1080,31 +1157,30 @@ header nav{
     background: url(../assets/logo_icone.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-left: 90px;
     margin-left: 40px;
-    width: 570px;
+    width: 835px;
     height: 150px;
     margin: 50px 0;
     margin-left: 40px;
     color: #930000;
     font-size: 30px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .skills_title{
         width: 260px;
         height: 100px;
-        font-size: 23px;
+        font-size: 20px;
         padding-left: 45px;
         margin-left: 40px;
         margin-left: 20px;
     }
 }
-@media only screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape){
     .skills_title{
         width: 430px;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
     .skills_title{
         margin-left: 40px;
     }
@@ -1157,7 +1233,7 @@ header nav{
         flex-wrap: wrap;
     padding: 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .skills ul{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1166,7 +1242,7 @@ header nav{
         margin: 50px 0;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .skills ul{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1188,11 +1264,11 @@ header nav{
         width: 100%;
     }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
     .skills ul{
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start;
+                align-items: center;
         height: 345px;
         width: 680px;
         margin: 50px 0;
@@ -1208,13 +1284,13 @@ header nav{
     font-size: 20px;
     margin: 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .skills h5{
         margin: 20px 0;
         font-size: 25px;   
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .skills h5{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1278,7 +1354,7 @@ header nav{
     padding: 100px 0;
     overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact{
         background-attachment: initial;
         padding: 30px 0;
@@ -1296,7 +1372,15 @@ header nav{
         -ms-flex-align: center;
             align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .contact_container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contact_container{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1322,7 +1406,7 @@ header nav{
     width: 50%;
     color: #fff;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_info{
         width: 100%;
 
@@ -1334,15 +1418,20 @@ header nav{
     font-weight: 600;
     font-size: 18px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_info p{
         padding: 0 30px;
         font-weight: 400;
 
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact_info p{
+        padding: 0 15px;       
+    }
+}
 
-.contact_info h4{
+.contact_info h2{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1359,9 +1448,8 @@ header nav{
     width: 225px;
     height: 150px;
     font-size: 25px;
-    color: #930000;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_info h4{
         color: #fff;
 
@@ -1381,7 +1469,7 @@ header nav{
             justify-content: center;
     margin: 30px 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_link{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1409,7 +1497,7 @@ header nav{
     color: #fff;
     font-weight: 600;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_link a{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1447,7 +1535,7 @@ header nav{
     font-size: 2em;
     margin: 10px 0;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_social-links{
         margin: 30px 0;
     }
@@ -1459,7 +1547,7 @@ header nav{
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_social-links a{
         color: #fff;
     }
@@ -1489,12 +1577,12 @@ header nav{
     outline: none;
     color: #000;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact_form input, textarea{
         width: 270px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contact_form input, textarea{
         width: 370px;
     }
@@ -1532,7 +1620,7 @@ input:-webkit-autofill:active{
     font-weight: 400;
     color: #000;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .contact_form input::-webkit-input-placeholder, .contact_form textarea::-webkit-input-placeholder{
         font-weight: 400;
     }
@@ -1573,7 +1661,7 @@ input:-webkit-autofill:active{
     -o-transition: background-color 150ms ease-in-out;
     transition: background-color 150ms ease-in-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contact_form button{
         margin: 30px 0;
     }
@@ -1595,7 +1683,7 @@ footer{
     padding-left: 5px;
     padding-right: 80px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     footer{
         font-size: 14px;
         padding-right: 0;
