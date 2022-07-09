@@ -1,3 +1,9 @@
+:root{
+    --color-primary: #fff;
+    --title-fw: 700;
+    --title-size: 25px;
+}
+
 body{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -5,10 +11,17 @@ body{
     margin: 0;
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
+    background: linear-gradient(to bottom, #1e130c, #9a8478);
 }
+
 a{
     text-decoration: none;
 }
+
+h2, h5, h6{
+    font-family: Comfortaa, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .scroll-top{
     display: -webkit-box;
@@ -58,7 +71,6 @@ header{
         -ms-flex-pack: justify;
             justify-content: space-between;
     overflow: hidden;
-    background-color: #000;
 }
 @media screen and (max-width: 768px) {
     header{
@@ -533,6 +545,7 @@ header nav{
 }
 
 /* A PROPOS */
+
 .about{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,6 +571,7 @@ header nav{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+                padding-top: 30px!important;
     }
 }
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -566,6 +580,7 @@ header nav{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+                padding: 0;
     }
 }
 
@@ -601,14 +616,13 @@ header nav{
         background: url(../assets/me_without_bg.PNG);
         background-repeat: no-repeat;
         border-radius: 0;
-        -webkit-box-shadow: 0px -28px 15px #fff inset;
-                box-shadow: 0px -28px 15px #fff inset;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .about_photo{
         width: 100%;
         background-position: right;
+        background-position-y: 72px;
         margin: 0;
         padding-top: 88px;
     }
@@ -644,6 +658,8 @@ header nav{
         -ms-flex-pack: center;
             justify-content: center;
     width: 50%;
+    color: #fff;
+    font-size: 500;
 }
 @media screen and (max-width: 768px) {
     .about_text{
@@ -670,7 +686,7 @@ header nav{
 
 .about_text p{
     padding: 35px 65px;
-    font-weight: 600;
+    font-weight: 400;
 }
 @media screen and (max-width: 768px) {
     .about_text p{
@@ -699,13 +715,17 @@ header nav{
     padding-left: 45px;
     width: 316px;
     height: 150px;
-    color: #930000;
+    color: var(--color-primary);
 }
 @media screen and (max-width: 768px) {
     .about_text_title{
         width: 260px;
         height: 100px;
     }
+}
+
+.about_text_title h2{
+    font-weight: var(--title-fw);
 }
 
 .about button{
@@ -773,8 +793,9 @@ header nav{
     border-radius: 15px;
     width: 250px;
     height: 150px;
-    color: #930000;
-    font-size: 30px;
+    color: var(--color-primary);
+    font-size: var(--title-size);
+
 }
 @media screen and (max-width: 768px) {
     .portfolio_title{
@@ -786,12 +807,16 @@ header nav{
     }
 }
 
+.portfolio_title h2{
+    font-weight: var(--title-fw);
+}
+
 .portfolio_title_text{
     margin: 30px 0;
     padding: 10px 20px;
     padding-left: 50px;
     font-size: 20px;
-    color: #930000;
+    color: var(--color-primary);
     font-weight: 500;
 }
 @media screen and (max-width: 768px) {
@@ -984,6 +1009,7 @@ header nav{
 }
 
 /* Expérience */
+
 .xp{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1022,8 +1048,8 @@ header nav{
     height: 150px;
     margin: 50px 0;
     margin-left: 40px;
-    color: #930000;
-    font-size: 30px;
+    color: var(--color-primary);
+    font-size: var(--title-size);
 }
 @media screen and (max-width: 768px) {
     .xp_title{
@@ -1033,6 +1059,10 @@ header nav{
         padding-left: 45px;
         margin-left: 20px;
     }
+}
+
+.xp_title h2{
+    font-weight: var(--title-fw);
 }
 
 .xp-description{
@@ -1048,13 +1078,18 @@ header nav{
             align-items: center;
 }
 
+.xp ul{
+    margin: 0;
+    padding: 0;
+}
+
 .xp-description::before{
     content: "";
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #930000;
-    margin-bottom: 10px;
+    background-color: #D7BA75;
+    margin-bottom: 20px;
 }
 
 .xp-description::after{
@@ -1062,7 +1097,7 @@ header nav{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #930000;
+    background-color: #D7BA75;
     margin: 10px 0;
 }
 
@@ -1070,29 +1105,14 @@ header nav{
     position: relative;
     overflow: hidden;
 }
-.xp-line{
-    position: absolute;
-    left: 319px;
-    top: 5px;
-    width: 2px;
-    height: 785px;
-    z-index: -1;
-    background-color: #930000;
-}
-@media screen and (max-width: 768px) {
-    .xp-line{
-        left: 149px;
-        height: 900px;
-    }
-}
 
 .xp-description li{
     list-style: none;
     text-align: center;
     margin: 25px 0;
     width: 600px;
-    background-color: #fff;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 300;
 }
 @media screen and (max-width: 768px) {
     .xp-description li{
@@ -1105,12 +1125,13 @@ header nav{
 
 .xp h5{
     font-size: 20px;
+    color: #fff;
 }
 
 .xp h6{
     font-size: 25px;
     margin: 0;
-    color: #930000;
+    color: #D7BA75;
 }
 
 .xp span{
@@ -1118,7 +1139,6 @@ header nav{
 }
 
 .xp span, .xp h5, .xp h6{
-    background-color: #fff;
     z-index: 2;
     padding: 5px 0;
 }
@@ -1158,12 +1178,12 @@ header nav{
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 40px;
-    width: 835px;
+    width: 795px;
     height: 150px;
     margin: 50px 0;
     margin-left: 40px;
-    color: #930000;
-    font-size: 30px;
+    color: var(--color-primary);
+    font-size: var(--title-size);
 }
 @media screen and (max-width: 768px) {
     .skills_title{
@@ -1184,6 +1204,10 @@ header nav{
     .skills_title{
         margin-left: 40px;
     }
+}
+
+.skills_title h2{
+    font-weight: var(--title-fw);
 }
 
 .skills li{
@@ -1282,6 +1306,8 @@ header nav{
 
 .skills_list h5{
     font-size: 20px;
+    font-weight: 400;
+    color: #fff;
     margin: 0;
 }
 @media screen and (max-width: 768px) {
@@ -1415,12 +1441,12 @@ header nav{
 
 .contact_info p{
     padding: 0 100px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
 }
 @media screen and (max-width: 768px) {
     .contact_info p{
-        padding: 0 30px;
+        padding: 0 55px;
         font-weight: 400;
 
     }
@@ -1448,6 +1474,7 @@ header nav{
     width: 225px;
     height: 150px;
     font-size: 25px;
+    font-weight: var(--title-fw);
 }
 @media screen and (max-width: 768px) {
     .contact_info h4{
@@ -1502,6 +1529,7 @@ header nav{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            font-size: 14px;
 
     }
 }
